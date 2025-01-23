@@ -1,0 +1,50 @@
+.add-member-container {
+    margin: 20px;
+    font-family: Arial, sans-serif;
+}
+
+input {
+    margin: 5px 0;
+    padding: 8px;
+    width: 200px;
+}
+
+button {
+    margin: 5px 0;
+    padding: 8px 15px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.members-list {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.members-list th,
+.members-list td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.members-list th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+}
+
+.members-list tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.members-list tr:hover {
+    background-color: #f1f1f1;
+}

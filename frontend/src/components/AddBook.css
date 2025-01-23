@@ -1,0 +1,89 @@
+.add-book-container {
+    margin: 20px auto;
+    max-width: 800px;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+h2, h3 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+input[type="text"],
+input[type="number"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #3CB043;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #2d8e34;
+}
+
+.books-list {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    font-size: 14px;
+}
+
+.books-list thead {
+    background-color: #3CB043;
+    color: white;
+}
+
+.books-list th,
+.books-list td {
+    padding: 12px 15px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+.books-list th {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.books-list tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.books-list tr:hover {
+    background-color: #f1f7f3;
+}
+
+.books-list td button {
+    background-color: #ff4d4d;
+    color: white;
+    font-size: 12px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.books-list td button:hover {
+    background-color: #e60000;
+}
