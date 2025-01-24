@@ -149,12 +149,12 @@ def delete_book(book_id):
 # Route to delete a member
 @app.route("/delete-member/<membership_id>", methods=["DELETE"])
 def delete_member(membership_id):
-    member = mongo.db.members.find_one({"_id": ObjectId(membership_id), "deleted": False})
+    member = mongo.db.members.find_one({"membership_id": membership_id, "deleted": False})
     if not member:
         return jsonify({"error": "Member not found or already deleted."}), 404
     
     mongo.db.members.update_one(
-        {"_id": ObjectId(membership_id)}, {"$set": {"deleted": True}}
+        {"membership_id": membership_id}, {"$set": {"deleted": True}}
     )
     return jsonify({"message": "Member deleted successfully."})
 
